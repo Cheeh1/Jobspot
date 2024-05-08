@@ -5,8 +5,11 @@ import { Redirect, router } from "expo-router";
 
 const App = () => {
   return (
-    <SafeAreaView className="bg-white">
-      <ScrollView contentContainerStyle={{ height: "100%" }}>
+    <SafeAreaView>
+      <ScrollView
+        className="bg-white"
+        contentContainerStyle={{ height: "100%" }}
+      >
         <View className="flex pt-5 px-5">
           <Text className="text-[#130160] font-bold text-3xl text-center">
             Jobspot
@@ -45,7 +48,7 @@ const App = () => {
           </View>
         </View>
       </ScrollView>
-      <StatusBar backgroundColor="#FFFFF" style="light" />
+      <StatusBar backgroundColor="#ffff" style="light" />
     </SafeAreaView>
   );
 };
