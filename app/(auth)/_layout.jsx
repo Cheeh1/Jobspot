@@ -12,7 +12,7 @@ const AuthLayout = () => {
         <Stack.Screen name="checkEmail" options={{ headerShown: false }} />
         <Stack.Screen name="successful" options={{ headerShown: false }} />
       </Stack>
-      <StatusBar backgroundColor="#524B6B" style="light" />
+      <StatusBar backgroundColor="#D6CDFE" style="dark" />
     </>
   );
 };

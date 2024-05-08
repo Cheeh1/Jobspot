@@ -6,11 +6,8 @@ import { Redirect, router } from "expo-router";
 const App = () => {
   return (
     <SafeAreaView>
-      <ScrollView
-        className="bg-white"
-        contentContainerStyle={{ height: "100%" }}
-      >
-        <View className="flex pt-5 px-5">
+      <ScrollView contentContainerStyle={{ height: "100%" }}>
+        <View className="flex py-5 px-5 bg-white">
           <Text className="text-[#130160] font-bold text-3xl text-center">
             Jobspot
           </Text>
@@ -36,7 +33,7 @@ const App = () => {
             </View>
             <View className="flex items-end">
               <TouchableOpacity
-                onPress={() => router.push("/home")}
+                onPress={() => router.push("/sign-in")}
                 className="bg-[#130160] w-14 py-3 px-3 rounded-2xl"
               >
                 <Image
@@ -47,8 +44,8 @@ const App = () => {
             </View>
           </View>
         </View>
+        <StatusBar backgroundColor="#ffff" style="dark" />
       </ScrollView>
-      <StatusBar backgroundColor="#ffff" style="light" />
     </SafeAreaView>
   );
 };

@@ -16,12 +16,9 @@ const SignIn = () => {
     setForm({ ...form, [fieldName]: value });
   };
   return (
-    <SafeAreaView className="">
-      <ScrollView
-        className="bg-[#fbfbfb] pt-12 pr-5"
-        contentContainerStyle={{ height: "100%" }}
-      >
-        <View className="">
+    <SafeAreaView>
+      <ScrollView contentContainerStyle={{ height: "100%" }}>
+        <View className="flex-1 bg-[#fbfbfb] py-12 pr-5">
           <View className="flex items-center gap-3">
             <Text className="text-3xl text-primary font-semibold">
               Welcome Back
