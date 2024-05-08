@@ -36,7 +36,7 @@ const App = () => {
             </View>
             <View className="flex items-end">
               <TouchableOpacity
-                onPress={() => router.push("/sign-in")}
+                onPress={() => router.push("/home")}
                 className="bg-[#130160] w-14 py-3 px-3 rounded-2xl"
               >
                 <Image

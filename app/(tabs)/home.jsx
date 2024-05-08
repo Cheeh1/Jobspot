@@ -1,10 +1,15 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+   <SafeAreaView>
+    <ScrollView className="bg-white" contentContainerStyle={{height: "100%"}}>
+      <View>
+        <Text>Homepage</Text>
+      </View>
+    </ScrollView>
+   </SafeAreaView>
   )
 }
 
